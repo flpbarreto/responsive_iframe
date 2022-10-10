@@ -1,25 +1,36 @@
-  on crée un conteneur pour l'iframe 
-  On le met en relative et le plus important c'est le ratio en %age.
-  Ca permet de changer en gardant les proportions ( ici du 16/9 pour les vidéos)
+/* iframe reponsivo para envelopar vídeos */
+@charset "UTF-8";
 
+*{
+  margin: 0px;
+  padding: 0px;
+}
 
-
-.conteneur {
+h1{
   margin: auto;
-  margin-top: 300px;
-  height: 900px;
-  width: 1600px;
+  padding: 50px 0px 50px 0px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-weight: bolder;
+  background-image: linear-gradient( to bottom, #63A9FF, #0B407F, #1059B3);
+  color: #021833;
+}
+
+div {
+  margin: auto;
+  
+  max-height: 900px;
+  max-width: 1600px;
   position: relative;
   overflow: hidden;
   padding-top: 56.25%;
 }
 
-.responsive-iframe {
-  
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-border: 0;
+div > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
